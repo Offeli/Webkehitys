@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+    font-family: "SansSerif";
+}
+h1 {
+    font-family: Arial;
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+img {
+    border: 2px solid #C6d9f1;
+    margin-bottom: 20px;
+}
+figcaption{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.one{
+    background-color: cornflowerblue;
+}
+.two {
+    background-color: lightcoral;
+}
+
+.three{
+    background-color: palevioletred;
+}
+
+td{
+    border-top: 1px solid black;
+    border-bottom:1px solid black;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 300px;
+}
+.berry{
+    text-align: match-parent;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background: #ffc0c0;
+}
+
+h1, h2 {
+    color: blue;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 4.0em;
+}
+
+ul, ol {
+    font-size: 0.8em;
+    border: 1px solid;
+    color: darkgrey;
+    text-indent: 2em;
+}
+
+p::first-letter {
+    font-size:8em;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+
+figure{
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+p{
+    text-indent: 2em;
+}
+
+.copyright_notice {
+    font-size: 0.8em;
+}
+
+#special {
+    font-size: 0.8em;
+    color: yellowgreen;
+    font-style: italic;
+    border-left: 2px solid black;
+    margin-left: 40px;
+    padding-left: 10px;
+}
+
+#Basic {
+    font-family: sans-serif;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3a33d1;
+}
