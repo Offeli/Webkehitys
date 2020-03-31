@@ -1,0 +1,17 @@
+input[type="text"] {
+    color: #082c00;
+}
+input[type="email"] {
+    color: #0c2c00;
+}
+
+input[type="submit"] {
+    font-weight : bold;
+}
+
+body{
+    background-color: #6783b7;
+    padding: 1em;
+    font-family: Arial;
+    font-size: 16px;
+}
