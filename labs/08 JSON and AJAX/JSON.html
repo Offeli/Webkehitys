@@ -18,8 +18,34 @@ var fido2 = {
 var fidoString = JSON.stringify(fido2);
 console.log("We made a string from a dog! " + fidoString);
 
+var mole = {
+  dimensions: { height: 5,
+    lenght: 15,
+  },
+  weight: 2,
+  color: "black",
+};
+
+window.onload = init;
+function init() {
+  var myString = JSON.stringify(mole);
+  var stringmolenode = document.createTextNode(myString);
+  document.getElementById("moleDisplay").appendChild(stringmolenode);
+  var myObject = JSON.parse(myString);
+  var moledimensions = myObject.dimensions;
+  var dimensionString = JSON.stringify(moledimensions);
+  var stringdimnode = document.createTextNode(dimensionString);
+  document.getElementById("dimensionDisplay").appendChild(stringdimnode);
+}
+
   </script>
 </head>
 <body>
+<div id="moleDisplay">
+
+</div>
+<div id="dimensionDisplay">
+
+</div>
 </body>
 </html>
