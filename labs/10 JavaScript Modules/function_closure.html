@@ -25,7 +25,7 @@ function handleClick() {
 	count++;
 	div.innerHTML = message + count + " times!";
 }
-*/
+
 
 //
 // The version with the closure.
@@ -41,12 +41,40 @@ window.onload = function() {
 		div.innerHTML = message + count + " times!";
 	};
 };
+*/
+window.onload = function() {
+	var count = 0;
+	var countdiv = document.getElementById("playback-speed");
+	var decrease = document.getElementById("-");
+	var reset = document.getElementById("0");
+	var increase = document.getElementById("+");
+	function updateCount() {
+		countdiv.innerHTML = count;
+	}
+	updateCount();
+	increase.onclick = function() {
+		count++;
+		updateCount();
+	};
+	reset.onclick = function() {
+		count = 0;
+		updateCount();
+	};
+	decrease.onclick = function() {
+		count--;
+		updateCount();
+	};
+};
 
 </script> 
 </head> 
 <body>
+	<button id="-">-</button>
+	<button id="0">0</button>
+	<button id="+">+</button>
 	<button id="clickme">Click me!</button>
 	<div id="message"></div>
+	<div id="playback-speed"></div>
 </body>
 </html>
 
