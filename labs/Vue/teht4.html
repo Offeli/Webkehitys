@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="newName" placeholder="Anna lisättävä nimi">
+    <button v-on:click="Add">Lisää</button>
+    <button v-on:click="Remove">Poista</button>
+    <ul>
+        <li v-for="(name, index) in names">
+            {{name.name}}
+            <button v-on:click="Delete(index)">Poista</button>
+        </li>
+    </ul>
+</div>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      newName: '',
+      names: [
+        {
+          name: "Mauri Pekkarinen",
+        }
+      ],
+
+    },
+    methods: {
+      Add: function() {
+        if(!this.newName.trim()) return;
+        var nameToAdd = {
+          name: this.newName,
+        }
+          this.names.push(nameToAdd);
+          this.newName = '';
+      },
+      Remove: function() {
+        this.names.shift();
+      },
+      Delete: function(index){
+        this.names.splice(index, 1);
+      }
+    }
+  })
+</script>
+</body>
+</html>
